@@ -1,0 +1,10 @@
+name: Start Workflow
+on:
+    push:
+        branches: 
+            - 'feature**'
+jobs:
+    dotnet-ci:
+        uses: ./.github/workflows/dotnet-ci.yml
+        secrets: inherit
+

@@ -1,0 +1,9 @@
+name: Start Workflow
+on:
+    push:
+        branches: 
+            - 'main'
+jobs:
+    dotnet-ci:
+        uses: ./.github/workflows/publish.yml
+        secrets: inherit
