@@ -2,7 +2,7 @@ name: Start Workflow
 on:
     push:
         branches: 
-            - 'main'
+            - 'master'
 jobs:
     dotnet-ci:
         uses: ./.github/workflows/publish.yml
